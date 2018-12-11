@@ -94,7 +94,7 @@ QQ号 : 1344683865
 如果大于70,小于90. 提示就快结束了的一个老屁孩儿.
 如果大于90以上.    提示再见了这个世界.
 '''
-# 方法一:
+# 方法1:
 # age = int(input('请输入您的年龄：'))
 # if age < 10:
 #     print('小屁孩儿.')
@@ -115,7 +115,7 @@ QQ号 : 1344683865
 # elif age > 90:
 #     print('再见了这个世界...')
 
-# 方法二:
+# 方法2:
 # age = int(input('请输入您的年龄：'))
 # if age < 10:
 #     print('小屁孩儿.')
@@ -136,7 +136,7 @@ QQ号 : 1344683865
 # elif age > 90:
 #     print('再见了这个世界...')
 
-# 方法三:
+# 方法3:
 # age = int(input('请输入您的年龄：'))
 # if age < 50:
 #     if 10 < age < 20:
@@ -185,86 +185,70 @@ QQ号 : 1344683865
 #     5.只有input('')
 
 '''
-9、提示用户输入麻花藤. 判断用户输入的对不对. 如果对, 提示真聪明, 如果不对, 提示你是傻逼么？
+9、提示用户输入麻花藤. 判断用户输入的对不对. 如果对, 提示真聪明, 如果不对, 提示你是傻x么？
 '''
 # username = input('请输入用户名：')
 # if username == '麻花藤':
 #     print(username, '真聪明')
 # else:
-#     print(username, '你是傻逼么？')
+#     print(username, '你是傻x么？')
 
 
 '''
 10、使用while循环输入 1 2 3 4 5 6 8 9 10
 '''
-# 方法一:
-# count = 1
-# while count < 11:
-#     if count == 7:
-#         count = count + 1
-#     print(count)
-#     count = count + 1
 
-# 方法二:
+# 方法1:
 # count = 1
 # while count < 11:
 #     if count == 7:
-#         count += 1
+#         count + 1
 #     print(count)
 #     count += 1
 
-# 方法三:
+# 方法2:
 # count = 1
-# while count < 10:
+# while count < 11:
 #     if count != 7:
 #         print(count)
 #     count += 1
-
+#
 
 '''
 11、求1-100的所有数的和
 '''
-# 方法一:
 # sum = 0
 # count = 1
 # while count < 101:
-#     sum = sum + count
-#     count = count + 1
-# print(sum)
-
-# 方法二:
-# s_u_m = 0
-# count = 1
-# while count < 101:
-#     s_u_m += count
+#     sum += count
 #     count += 1
-# print(s_u_m)
+# print(sum)
 
 
 '''
 12、输出 1-100 内的所有奇数
 '''
-# 方法一:
+# 方法1:
 # count = 1
 # while count < 101:
 #    print(count)
-#    count = count + 2
+#    count += 2
 
-# 方法二:
+# 方法2:
 # count = 1
 # while count < 100:
-#    if count % 2 == 0:  # 对2取余为0时,加1则为奇数
-#        count = count + 1
-#    print(count)
-#    count = count + 1
-
-# 方法三:
-# count = 1
-# while count < 100:
-#     if count % 2 == 0:
+#     if count % 2 == 0:  # 对2取余为0时,加1则为奇数
 #         count += 1
 #     print(count)
 #     count += 1
+
+# 方法3:
+# count = 0
+# while count < 100:
+#     count += 1
+#     if count % 2 == 1:
+#         print(count)
+
 
 '''
 13、输出 1-100 内的所有偶数
@@ -275,57 +259,45 @@ QQ号 : 1344683865
 #     print(count)
 #     count = count + 2
 
-# 方法二:
+# 方法2:
 # count = 1
 # while count < 100:
-#    if count % 2 == 1:  # 对2取余为1时,加1则为偶数
-#        count = count + 1
-#    print(count)
-#    count = count + 1
-
-# 方法三:
-# count = 1
-# while count < 100:
-#     if count % 2 == 1:
+#     if count % 2 == 1:  # 对2取余为1时,加1则为偶数
 #         count += 1
 #     print(count)
 #     count += 1
+
+# 方法3:
+# count = 1
+# while count < 100:
+#     count += 1
+#     if count % 2 == 0:
+#         print(count)
 
 
 '''
 14、求1-2+3-4+5 ... 99的所有数的和
 '''
-# 方法一:
 # sum = 0
 # count = 1
 # while count < 100:
-#     if count % 2 == 0:
-#         sum = sum - count
+#     if count % 2 == 0:  # 对二取余为偶数时 -
+#         sum -= count
 #     else:
-#         sum = sum + count
-#     count = count + 1
-# print(sum)
-
-# 方法二:
-# s_u_m = 0
-# count = 1
-# while count < 100:
-#     if count % 2 == 0:
-#         s_u_m -= count
-#     else:
-#         s_u_m += count
+#         sum += count
 #     count += 1
-# print(s_u_m)
+# print(sum)
 
 
 # ############################ 作业题 #############################
 
 
-'''
-作业:用户登录
-1. 三次重试机会
-2. 每次输错误时显示剩余错误次数
-'''
+# '''
+# 作业:用户登录
+# 1. 三次重试机会
+# 2. 每次输错误时显示剩余错误次数
+# '''
+# 方法1:
 # count = 0
 # number = 3
 # while count < 3:
@@ -339,4 +311,49 @@ QQ号 : 1344683865
 #     else:
 #         number -= 1
 #         print('用户:', username, '登录失败,剩余错误次数为', number)
+#     count += 1
+#
+# 方法2:
+# username, password = 'xeon', '123456'
+# count = 0
+# while count <= 3:
+#     username1 = input('请输入用户名:')
+#     password1 = input('请输入密码:')
+#
+#     if username == username1 and password == password1:
+#         print('用户:', username, '登录成功.')
+#         break
+#     else:
+#         count += 1
+#         number = 3 -count
+#         print('用户名或密码错误! 剩余失败错误次数为: %s.' %number)
+#
+# 方法3:
+# username, password = 'xeon', '123456'
+# count = 3
+# while count > 0:
+#     username1 = input('请输入用户名:')
+#     password1 = input('请输入密码:')
+#     if username == username1 and password == password1:
+#         print('用户:', username, '登录成功.')
+#         break
+#     else:
+#         count -= 1
+#         if count == 0:
+#             print("\n用户名或密码错误次数过多，禁止登陆！")
+#             break
+#         print("用户名或密码错误,请再次输入,剩余尝试次数 %s 次\n" % count)
+#
+# 方法4:
+# list1 = ['xeon', '123456']
+# count = 0
+# while count < 3:
+#     username = input('请输入用户名:').strip()
+#     password = input('请输入密码:').strip()
+#
+#     if username == list1[0] and password == list1[1]:
+#         print('登录成功')
+#         break
+#     else:
+#         print('用户名或密码错误,剩余尝试次数为%d'% (2 - count))
 #     count += 1
